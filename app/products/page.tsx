@@ -1,23 +1,20 @@
-import Link from "next/link"
-import { products } from "./data/products"
+import Link from "next/link";
+import { products } from "./data/products";
 
-export default function ProductsPage() {
-  
+export default function ProductPage () {
     return(
         <>
-            <div>
-                <h1>Products</h1>
-                {
-                    products.map((product)=>(
-                        <div key={product.id}>
-                            
-                            <Link href={`/products/${product.id}`}>
-                                {product.name}
-                            </Link>
-                        </div>
-                    ))
-                }
-            </div>
+            <div>Products List</div>
+            {
+                products.map((product)=>(
+                    <Link
+                        key={product.id}
+                        href={`/products/${product.id}`}
+                    >
+                        <h2 className="text-blue-600 hover:underline">{product.name}</h2>
+                    </Link>
+                ))
+            }
         </>
     )
 }
