@@ -10,7 +10,7 @@ export default function Sidebar() {
     { name: "Categories", href: "/dashboard/categories" },
     { name: "Products", href: "/dashboard/products" },
     { name: "Settings", href: "/dashboard/settings" },
-    {name: "Logout", href : "/dashboard/logout"}
+    {name: "Logout", href: "/dashboard/logout"}
   ];
   return (
     <aside className="w-64 h-screen bg-gray-800 text-white p-5">

@@ -1,7 +1,11 @@
-import Link from "next/link"
-import { redirect } from "next/navigation"
+import Link from "next/link";
+import { redirect } from "next/navigation";
 
-export default function Home () {
-      redirect("/login")
-
+export default function Home() {
+  // redirect("/login")
+  return (
+    <>
+      <div></div>
+    </>
+  );
 }
